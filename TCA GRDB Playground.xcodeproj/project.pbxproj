@@ -11,6 +11,11 @@
 		31913BB32C0CCC55005C8A2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31913BB22C0CCC55005C8A2C /* ContentView.swift */; };
 		31913BB52C0CCC56005C8A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31913BB42C0CCC56005C8A2C /* Assets.xcassets */; };
 		31913BB82C0CCC56005C8A2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31913BB72C0CCC56005C8A2C /* Preview Assets.xcassets */; };
+		31913BC02C0CCC6A005C8A2C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 31913BBF2C0CCC6A005C8A2C /* ComposableArchitecture */; };
+		31913BC32C0CCC75005C8A2C /* IdentifiedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 31913BC22C0CCC75005C8A2C /* IdentifiedCollections */; };
+		31913BC62C0CCC93005C8A2C /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 31913BC52C0CCC93005C8A2C /* GRDB */; };
+		31B4F6682C0E4167004D46BF /* GRDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B4F6672C0E4167004D46BF /* GRDB.swift */; };
+		31B4F66A2C0F5DB2004D46BF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B4F6692C0F5DB2004D46BF /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,8 @@
 		31913BB22C0CCC55005C8A2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		31913BB42C0CCC56005C8A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31913BB72C0CCC56005C8A2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31B4F6672C0E4167004D46BF /* GRDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDB.swift; sourceTree = "<group>"; };
+		31B4F6692C0F5DB2004D46BF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31913BC62C0CCC93005C8A2C /* GRDB in Frameworks */,
+				31913BC02C0CCC6A005C8A2C /* ComposableArchitecture in Frameworks */,
+				31913BC32C0CCC75005C8A2C /* IdentifiedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +61,10 @@
 		31913BAF2C0CCC55005C8A2C /* TCA GRDB Playground */ = {
 			isa = PBXGroup;
 			children = (
-				31913BB02C0CCC55005C8A2C /* TCA_GRDB_PlaygroundApp.swift */,
 				31913BB22C0CCC55005C8A2C /* ContentView.swift */,
+				31B4F6672C0E4167004D46BF /* GRDB.swift */,
+				31B4F6692C0F5DB2004D46BF /* Models.swift */,
+				31913BB02C0CCC55005C8A2C /* TCA_GRDB_PlaygroundApp.swift */,
 				31913BB42C0CCC56005C8A2C /* Assets.xcassets */,
 				31913BB62C0CCC56005C8A2C /* Preview Content */,
 			);
@@ -83,6 +95,11 @@
 			dependencies = (
 			);
 			name = "TCA GRDB Playground";
+			packageProductDependencies = (
+				31913BBF2C0CCC6A005C8A2C /* ComposableArchitecture */,
+				31913BC22C0CCC75005C8A2C /* IdentifiedCollections */,
+				31913BC52C0CCC93005C8A2C /* GRDB */,
+			);
 			productName = "TCA GRDB Playground";
 			productReference = 31913BAD2C0CCC55005C8A2C /* TCA GRDB Playground.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,11 @@
 				Base,
 			);
 			mainGroup = 31913BA42C0CCC55005C8A2C;
+			packageReferences = (
+				31913BBE2C0CCC6A005C8A2C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				31913BC12C0CCC75005C8A2C /* XCRemoteSwiftPackageReference "swift-identified-collections" */,
+				31913BC42C0CCC93005C8A2C /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
 			productRefGroup = 31913BAE2C0CCC55005C8A2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B4F6682C0E4167004D46BF /* GRDB.swift in Sources */,
 				31913BB32C0CCC55005C8A2C /* ContentView.swift in Sources */,
 				31913BB12C0CCC55005C8A2C /* TCA_GRDB_PlaygroundApp.swift in Sources */,
+				31B4F66A2C0F5DB2004D46BF /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +368,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		31913BBE2C0CCC6A005C8A2C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.4;
+			};
+		};
+		31913BC12C0CCC75005C8A2C /* XCRemoteSwiftPackageReference "swift-identified-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-identified-collections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+		31913BC42C0CCC93005C8A2C /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		31913BBF2C0CCC6A005C8A2C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31913BBE2C0CCC6A005C8A2C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		31913BC22C0CCC75005C8A2C /* IdentifiedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31913BC12C0CCC75005C8A2C /* XCRemoteSwiftPackageReference "swift-identified-collections" */;
+			productName = IdentifiedCollections;
+		};
+		31913BC52C0CCC93005C8A2C /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31913BC42C0CCC93005C8A2C /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 31913BA52C0CCC55005C8A2C /* Project object */;
 }

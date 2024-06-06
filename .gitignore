@@ -1,0 +1,50 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+
+# Swift Package Manager
+Packages/
+.swiftpm/
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+# Uncomment the next line if you're ignoring dependencies:
+# /path/to/dependencies
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Code Coverage
+*.xccovreport
+*.xccovarchive
+
+# Temporary files
+*.moved-aside
+*.swp
+*.lock
+*~
+*.dat
+*.pyc
+*.pyo
+
+# App settings
+*.xcuserstate
+*.xcscmblueprint
+
+# Generated files
+*.generated.swift
+
+# IDE
+.idea/
+*.iml
